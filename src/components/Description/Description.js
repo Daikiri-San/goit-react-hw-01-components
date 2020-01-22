@@ -5,45 +5,40 @@ import styled from 'styled-components';
 const Avatar = styled.img`
   width: 12rem;
   border-radius: 50%;
+  margin: 0 auto;
   margin-bottom: 3rem;
 `;
 
 const DescriptionBlock = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding: 4rem 4rem 0rem 4rem;
 `;
 
 const Name = styled.p`
   font-size: 2rem;
-  font-weight: 500;
+  font-family: var(--secondary-font);
   margin-bottom: 0.6rem;
 `;
 
 const Tag = styled.p`
   font-size: 1.4rem;
-  font-weight: 300;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 0.8rem;
 `;
 
 const Location = styled.p`
   font-size: 1.4rem;
-  font-weight: 300;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 4rem;
 `;
 
 function Description({ name, tag, location, avatar }) {
-  const hasLocation = location;
   return (
     <DescriptionBlock>
       <Avatar src={avatar} alt="user avatar" />
       <Name>{name}</Name>
       <Tag>@{tag}</Tag>
-      {hasLocation && <Location>{location}</Location>}
+      {location && <Location>{location}</Location>}
     </DescriptionBlock>
   );
 }

@@ -19,7 +19,7 @@ function FriendList({ friends }) {
           avatar={avatar}
           isOnline={isOnline}
           name={name}
-        ></FriendListItem>
+        />
       ))}
     </List>
   );

@@ -6,13 +6,8 @@ import styled from 'styled-components';
 
 const ProfileBlock = styled.div`
   max-width: 30rem;
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
   margin-top: 4rem;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  justify-content: center;
-  align-items: center;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
   background-color: snow;
   border-radius: 0.4rem;

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Alatsi|Roboto&display=swap');
-
 :root {
+  --secondary-font: 'Roboto-Medium', sans-serif;
+
   position: relative;
   box-sizing: border-box;
-  font-family: Alatsi, sans-serif;
+  font-family: 'Roboto-Regular', sans-serif;
   font-size: 62.5%;
   background-color: #e9e9f0;
 }

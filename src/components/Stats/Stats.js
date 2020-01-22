@@ -5,26 +5,23 @@ import styled from 'styled-components';
 const List = styled.ul`
   width: 100%;
   display: flex;
-  align-items: center;
 `;
 
 const ListText = styled.span`
   font-size: 1.3rem;
-  font-weight: 300;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 0.4rem;
 `;
 
 const ListStats = styled.span`
   font-size: 1.6rem;
-  font-weight: 500;
+  font-family: var(--secondary-font);
 `;
 
 const ListItem = styled.li`
   width: 33.3%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 2rem 0rem;
   border-right: 1px solid rgba(0, 0, 0, 0.1);

@@ -9,13 +9,10 @@ function randomHexColor() {
 }
 
 const StatisticsBlock = styled.section`
-  max-width: 30%;
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   margin-left: 50%;
   transform: translateX(-50%);
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   background-color: snow;
   border-bottom-right-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
@@ -23,30 +20,26 @@ const StatisticsBlock = styled.section`
 `;
 
 const Title = styled.title`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   background-color: snow;
   font-size: 2.2rem;
-  font-weight: 500;
+  font-family: var(--secondary-font);
   padding: 2.2rem;
   color: rgba(0, 0, 0, 0.7);
 `;
 
 const List = styled.ul`
-  width: 100%;
+  min-width: 21rem;
+  max-width: 56rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 `;
 
 const ListItem = styled.li`
-  flex-basis: 20%;
+  width: 7rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 1rem 2rem;
   background-color: ${props => props.color};
 
@@ -61,7 +54,6 @@ const ListItem = styled.li`
 
 const ListText = styled.span`
   font-size: 1.2rem;
-  font-weight: 300;
   margin-bottom: 0.4rem;
   color: snow;
 `;
@@ -72,10 +64,9 @@ const ListStats = styled.span`
 `;
 
 function Statistics({ title, stats }) {
-  const hasTitle = title;
   return (
     <StatisticsBlock>
-      {hasTitle && <Title>{title.toUpperCase()}</Title>}
+      {title && <Title>{title.toUpperCase()}</Title>}
 
       <List>
         {stats.map(({ id, label, percentage }) => (

@@ -8,7 +8,7 @@ const ListItem = styled.li`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 1.4rem;
   background-color: snow;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   margin-bottom: 1rem;
@@ -16,20 +16,21 @@ const ListItem = styled.li`
 
 const Status = styled.span`
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
   border-radius: 50%;
   background-color: ${props => (props.isOnline ? '#19e320' : '#fc2b2b')};
 `;
 
 const Avatar = styled.img`
-  margin-left: 1rem;
+  margin-left: 1.4rem;
   border-radius: 0.6rem;
   width: 10rem;
 `;
 
 const Name = styled.p`
-  margin-left: 1rem;
+  font-family: var(--secondary-font);
+  margin-left: 1.4rem;
   font-size: 3rem;
 `;
 

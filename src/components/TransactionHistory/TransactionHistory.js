@@ -5,8 +5,7 @@ import styled from 'styled-components';
 const Table = styled.table`
   border-collapse: collapse;
   min-width: 70%;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
   margin-bottom: 10rem;
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
@@ -19,7 +18,7 @@ const THeadTH = styled.th`
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-family: var(--secondary-font);
   color: snow;
   background-color: #13c9ed;
   border-right: 0.1rem solid snow;
@@ -50,7 +49,6 @@ const TBodyTR = styled.tr`
 
 const TBOdyTD = styled.td`
   text-transform: capitalize;
-  font-weight: 300;
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.6);
   width: 33.3%;
